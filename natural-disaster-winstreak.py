@@ -20,7 +20,7 @@ while True:
     text = pytesseract.image_to_string(Image.open('output.png'))
     print("___________________________________________ ",time.strftime("%H:%M:%S"))
     print(text)
-    if "|_blaze609" and "Survivors" in text:
+    if "InsertYourNameHere" and "Survivors" in text:
         print("Found 2 strings in image, waiting 10 seconds!")
         time.sleep(10)
         survivals = survivals + 1
